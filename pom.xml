@@ -35,10 +35,22 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<scope>provided</scope>
+			<version>1.61</version>
+		</dependency>
+		<dependency>
 			<groupId>com.atlassian.crowd</groupId>
 			<artifactId>crowd-server</artifactId>
 			<version>${crowd.version}</version>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15on</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -210,6 +222,11 @@
 					<groupId>org.apache.velocity</groupId>
 					<artifactId>velocity</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>org.owasp.esapi</groupId>
+					<artifactId>esapi</artifactId>
+				</exclusion>
+
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -222,12 +239,8 @@
 					<artifactId>bcprov-jdk15</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>xalan</groupId>
-					<artifactId>xalan</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>ca.juliusdavies</groupId>
-					<artifactId>not-yet-commons-ssl</artifactId>
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15on</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -289,6 +302,12 @@
 			<artifactId>crowd-server-shared</artifactId>
 			<version>3.3.0</version>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.bouncycastle</groupId>
+					<artifactId>bcprov-jdk15on</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.atlassian.event</groupId>
