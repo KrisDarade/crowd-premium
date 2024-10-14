@@ -38,7 +38,7 @@
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk15on</artifactId>
 			<scope>provided</scope>
-			<version>1.69</version>
+			<version>1.70</version>
 		</dependency>
 		<dependency>
 			<groupId>com.atlassian.crowd</groupId>
