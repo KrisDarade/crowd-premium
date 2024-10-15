@@ -44,12 +44,12 @@
 			<version>0.9</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk15on</artifactId>
-			<scope>provided</scope>
-			<version>1.70</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.bouncycastle</groupId>-->
+<!--			<artifactId>bcprov-jdk15on</artifactId>-->
+<!--			<scope>provided</scope>-->
+<!--			<version>1.70</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>com.atlassian.crowd</groupId>
 			<artifactId>crowd-server</artifactId>
